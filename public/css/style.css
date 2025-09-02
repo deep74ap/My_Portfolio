@@ -165,7 +165,8 @@ footer a:hover {
 }
 
 @media (max-width: 576px) {
-  .hero-title {
-    white-space: normal; /* allow wrapping only on very small screens */
+  .hero-title .typewriter {
+    display: block;
+    margin-top: 5px; /* optional spacing */
   }
 }
