@@ -140,6 +140,7 @@ footer a:hover {
   font-size: 2.8rem;
   font-weight: 500;
   line-height: 1.2;
+  white-space: nowrap;
 }
 
 /* Typewriter effect for text */
@@ -151,6 +152,7 @@ footer a:hover {
   border-right: 2px solid #1976d2;
   padding-right: 4px;
   white-space: nowrap;
+
   display: inline-block;
   min-width: 1em;
   letter-spacing: 0.5px;
@@ -160,4 +162,10 @@ footer a:hover {
 @keyframes blink-cursor {
   0%, 100% { border-color: #1976d2; }
   50% { border-color: transparent; }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    white-space: normal; /* allow wrapping only on very small screens */
+  }
 }
