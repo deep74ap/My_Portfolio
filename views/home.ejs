@@ -1,0 +1,214 @@
+<%- include('partials/header', { title: 'Home - Deepak Chaurasiya Portfolio' }) %>
+
+<!-- Hero Section -->
+<div class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-md-6 text-center text-md-start">
+      <h1 class="hero-title">
+  Hello, I'm
+  <span class="typewriter" id="typewriter-name"></span>
+</h1>
+      <p class="lead">AI | Full-Stack Developer | Java Programmer | Data Structures & Algorithms | Generative AI | Machine Learning</p>
+
+        <p>Computer Science student skilled in building scalable web applications, designing efficient solutions in Java, applying data structures and algorithms to solve complex problems, and leveraging Generative AI and Machine Learning for innovative solutions.</p>
+  </p>
+      <a href="https://github.com/deep74ap" target="_blank" class="btn btn-dark mt-3 me-2">GitHub</a>
+      <a href="/projects" class="btn btn-primary mt-3">View Projects</a>
+    </div>
+    <div class="col-md-6 text-center">
+      <img src="/images/dev5.png" alt="Developer" class="img-fluid rounded shadow" style="margin-left: 50px; max-width: 270px; width: 100%;">
+    </div>
+  </div>
+</div>
+
+
+<!-- Skills Section -->
+<div class="container-fluid bg-dark py-5">
+  <div class="container">
+    <h2 class="text-center mb-4 text-white">Technical Skills</h2>
+    <div class="row row-cols-2 row-cols-md-4 g-4">
+      <% const skills = [
+        {icon:'bi-cloud-fill', text:'Python', color:'text-info'},
+        {icon:'bi-cpu', text:'Machine Learning', color:'text-success'},
+        {icon:'bi-stars', text:'Generative AI', color:'text-warning'},
+        {icon:'bi-table', text:'SQL', color:'text-primary'},
+        {icon:'bi-bar-chart-line', text:'Data Analysis', color:'text-info'},
+        {icon:'bi-code-slash', text:'Java', color:'text-warning'},
+        {icon:'bi-filetype-py', text:'MongoDB', color:'text-info'},
+        {icon:'bi-filetype-js', text:'Express', color:'text-warning'},
+        {icon:'bi-node-plus-fill', text:'React', color:'text-success'},
+        {icon:'bi-database', text:'Node', color:'text-info'},
+        {icon:'bi-filetype-html', text:'HTML/CSS', color:'text-danger'},
+        {icon:'bi-filetype-jsx', text:'JavaScript', color:'text-primary'},
+        
+        
+    
+      ]; %>
+      <% skills.forEach(skill => { %>
+      <div class="col">
+        <div class="card text-center skill-card h-100 bg-secondary text-white">
+          <div class="card-body">
+            <i class="bi <%= skill.icon %> fs-1 <%= skill.color %>"></i>
+            <h6 class="card-title mt-2"><%= skill.text %></h6>
+          </div>
+        </div>
+      </div>
+      <% }); %>
+    </div>
+  </div>
+</div>
+
+<!-- Highlighted Projects -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">Highlighted Projects</h2>
+  <div class="row">
+    <!-- SummarAIze Project -->
+    <div class="col-md-6 mb-4">
+      <div class="card h-100 project-card">
+        <div class="card-body">
+          <h5 class="card-title"><b>SummarAIze: Smart Assistant for Research Documents</b></h5>
+          <p class="card-text">
+            SummarAIze is an AI-powered assistant that reads and reasons through your uploaded PDF or TXT documents. It delivers concise summaries, answers deep contextual questions, and challenges your understanding with logic-based evaluations. </p>
+          <!-- <a href="https://moodverse.onrender.com/" target="_blank" class="btn btn-success me-2">View Live</a> -->
+          <a href="https://github.com/deep74ap/SummarAIze" target="_blank" class="btn btn-dark">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- StayHaven Project -->
+    <div class="col-md-6 mb-4">
+      <div class="card h-100 project-card">
+        <div class="card-body">
+          <h5 class="card-title"><b>StayHaven</b></h5>
+          <p class="card-text">
+            A vacation rental platform built with Node.js, Express, and MongoDB enabling property listings, bookings, and user authentication.
+          </p>
+          <a href="https://github.com/deep74ap/StayHaven" target="_blank" class="btn btn-dark">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Certifications -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">Certifications</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <!-- Certificate 1 -->
+    <div class="col">
+      <a href="https://drive.google.com/file/d/1ufZDuhaC9HfaIOA8zxPzs5bzChvEPMmq/view?usp=sharing" target="_blank" class="text-decoration-none">
+        <div class="card h-100 text-center cert-card">
+          <div class="card-body">
+            <i class="bi bi-award-fill fs-1 text-success"></i>
+            <h6 class="card-title mt-2 text-dark">Generative AI and ChatGPT</h6>
+            <p class="card-text small text-muted">GeeksforGeeks</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Certificate 2 -->
+    <div class="col">
+      <a href="https://drive.google.com/file/d/1Ww7eD9qYN0wesEI_uSOqCVH7QyV-5tiG/view?usp=sharing" target="_blank" class="text-decoration-none">
+        <div class="card h-100 text-center cert-card">
+          <div class="card-body">
+            <i class="bi bi-award-fill fs-1 text-primary"></i>
+            <h6 class="card-title mt-2 text-dark">Python for Data Science, AI & Development</h6>
+            <p class="card-text small text-muted">IBM</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Certificate 3 -->
+    <div class="col">
+      <a href="https://drive.google.com/file/d/12UCuJl4vqBVw80mzozTDdWPcvI4p3RjM/view?usp=sharing" target="_blank" class="text-decoration-none">
+        <div class="card h-100 text-center cert-card">
+          <div class="card-body">
+            <i class="bi bi-award-fill fs-1 text-warning"></i>
+            <h6 class="card-title mt-2 text-dark">Python Project for Data Science</h6>
+            <p class="card-text small text-muted">IBM</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Certificate 4 -->
+    <div class="col">
+      <a href="https://drive.google.com/file/d/17QhyPkRtj9g-VfO5zsvg-TQUMT_xJ5uB/view?usp=sharing" target="_blank" class="text-decoration-none">
+        <div class="card h-100 text-center cert-card">
+          <div class="card-body">
+            <i class="bi bi-award-fill fs-1 text-info"></i>
+            <h6 class="card-title mt-2 text-dark">ReactJS</h6>
+            <p class="card-text small text-muted">Infosys SpringBoard</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Certificate 5 -->
+    <div class="col">
+      <a href="https://drive.google.com/file/d/1kX72mt3kohyI0rjkC7Wb6uQYb-Je2-M_/view?usp=sharing" target="_blank" class="text-decoration-none">
+        <div class="card h-100 text-center cert-card">
+          <div class="card-body">
+            <i class="bi bi-award-fill fs-1 text-secondary"></i>
+            <h6 class="card-title mt-2 text-dark">Building Machine Learning Systems with TensorFlow</h6>
+            <p class="card-text small text-muted">Infosys SpringBoard</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Certificate 6 -->
+    <div class="col">
+      <a href="https://drive.google.com/file/d/1-R3Q9nCmtNw6rqDOaxHW_DLKG32aHM02/view?usp=sharing" target="_blank" class="text-decoration-none">
+        <div class="card h-100 text-center cert-card">
+          <div class="card-body">
+            <i class="bi bi-award-fill fs-1 text-danger"></i>
+            <h6 class="card-title mt-2 text-dark">Data Analytics Job Simulation</h6>
+            <p class="card-text small text-muted">Deloitte</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+
+
+  </div>
+</div>
+
+
+
+<%- include('partials/footer') %>
+<script>
+const name = "Deepak Chaurasiya";
+const el = document.getElementById("typewriter-name");
+let idx = 0;
+let typing = true;
+
+function typeWriter() {
+  if (typing) {
+    if (idx <= name.length) {
+      el.textContent = name.slice(0, idx);
+      idx++;
+      setTimeout(typeWriter, 200);
+    } else {
+      typing = false;
+      setTimeout(typeWriter, 600);
+    }
+  } else {
+    if (idx > 0) { // Only show name while idx > 0
+      el.textContent = name.slice(0, idx);
+      idx--;
+      setTimeout(typeWriter, 160);
+    } else {
+      el.textContent = ""; // Ensure empty before restarting
+      typing = true;
+      setTimeout(typeWriter, 500);
+    }
+  }
+}
+
+typeWriter();
+</script>
