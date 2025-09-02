@@ -1,0 +1,163 @@
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa; /* subtle light background for clean look */
+  color: #333;
+}
+
+/* Navbar brand styling */
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* Hero image */
+img.hero-img {
+  max-height: 350px;
+}
+
+/* Skills card hover effect */
+.skill-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  background-color: #495057;
+}
+
+/* Project card hover effect */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+/* Certification card hover effect */
+.cert-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+/* Section headings */
+h2 {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Adjust card titles */
+.card-title {
+  font-size: 1rem;
+}
+
+/* Adjust card text */
+.card-text {
+  font-size: 0.9rem;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 5px;
+}
+
+/* Footer styling (optional if needed) */
+
+.footer {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  letter-spacing: 0.01em;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  box-sizing: border-box;
+}
+ul.list-unstyled li {
+  margin-bottom: 12px; /* adds vertical gap */
+}
+
+.footer .container {
+  max-width: 100%;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+@media (max-width: 767px) {
+  .footer .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+  /* padding: 20px 0;
+}
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; */
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Wider container for portfolio pages */
+  .navbar-nav .nav-item {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+.container {
+  max-width: 1400px; /* Increase from default (e.g., 1140px) */
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 98vw;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+/* Hero title styling */
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* Typewriter effect for text */
+.typewriter {
+  color: #1976d2; /* or your preferred highlight color */
+  font-weight: 600;
+  font-size: inherit; /* Matches parent h1 */
+  vertical-align: baseline;
+  border-right: 2px solid #1976d2;
+  padding-right: 4px;
+  white-space: nowrap;
+  display: inline-block;
+  min-width: 1em;
+  letter-spacing: 0.5px;
+  animation: blink-cursor 1s steps(1) infinite;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { border-color: #1976d2; }
+  50% { border-color: transparent; }
+}
